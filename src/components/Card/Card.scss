@@ -1,0 +1,47 @@
+@import '../../App.scss';
+
+.card-container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: $DarkGrayishBlue;
+
+    .card-body{
+        background: $GrayishBlue;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem 3.8rem 1.5rem;
+        border-radius: 0.8rem;
+        max-width: 430px;
+        margin-inline:1.3rem;
+        position: relative;
+
+        .title{
+            color:$NeonGreen;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .advice{
+            color:$LightCyan;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 1.3rem;
+        }
+        .get-advice{
+            position: absolute;
+            bottom: 0px;
+            transform: translate(0,50%);
+            border-radius: 50%;
+            padding: 1.3rem;
+            background: $NeonGreen;
+
+            &:active{
+                box-shadow: 0px 0px 20px 6px $NeonGreen;
+            }
+        }
+    }
+}
