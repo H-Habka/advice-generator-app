@@ -1,12 +1,17 @@
+import { useEffect, useState } from 'react';
 import './App.scss';
 import Card from './components/Card/Card';
 
+
+
 function App() {
-  return (
-    <>
-      <Card />
-    </>
-  );
-}
+
+  
+    return (
+      <>  
+        <Card />
+      </>
+    );
+  }
 
 export default App;
